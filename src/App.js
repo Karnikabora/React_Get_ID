@@ -33,12 +33,20 @@ const App = () => {
   };
 
   return (
-    <div className="App">
-      <h1>Person Details</h1>
+    <>
+    <div className="nav">
+    <h1>Person Details</h1>
+    </div>
+    <div className="App">      
       {person ? <PersonDetails person={person} /> : <p>Loading...</p>}
       <button className="cus-button" onClick={handleNextClick}>Next</button>
+    </div><br></br><br></br>
+    <div className="Footer">
+      <footer>Created by Karnika</footer>
     </div>
+    </>
   );
 };
 
 export default App;
+
