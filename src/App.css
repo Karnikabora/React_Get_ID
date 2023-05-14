@@ -1,23 +1,52 @@
-.App {
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+
+h1 {
   text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 80vh;
 }
 
 .card {
   border: 1px solid #ccc;
   padding: 20px;
-  margin: 20px auto;
+  margin: 100px auto;
   max-width: 400px;
+  text-align: center;
+  
+  background-color: #ccc;
 }
 
-button {
+.cus-button {
+  background-color: #4CAF50;
+  color: white;
   padding: 10px 20px;
-  font-size: 16px;
-  background-color: #ccc;
   border: none;
   cursor: pointer;
-  
+  margin-top: 20px;
 }
 
-button.cus-button{
-  color: white;
+.Footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
 }
